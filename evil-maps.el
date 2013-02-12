@@ -199,6 +199,7 @@
 (define-key evil-motion-state-map "gg" 'evil-goto-first-line)
 (define-key evil-motion-state-map "gj" 'evil-next-visual-line)
 (define-key evil-motion-state-map "gk" 'evil-previous-visual-line)
+(define-key evil-motion-state-map "gm" 'evil-middle-of-line)
 (define-key evil-motion-state-map "g0" 'evil-beginning-of-visual-line)
 (define-key evil-motion-state-map "g_" 'evil-last-non-blank)
 (define-key evil-motion-state-map "g^" 'evil-first-non-blank-of-visual-line)

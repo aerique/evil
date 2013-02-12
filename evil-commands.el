@@ -693,6 +693,12 @@ for specifying the tag."
 Calls `evil-lookup-func'."
   (funcall evil-lookup-func))
 
+(evil-define-motion evil-middle-of-line ()
+  "Jump to middle of the current line (where 'middle' is the center
+of the current window as per Vim functionality).
+Calls `evil-goto-column'."
+  (evil-goto-column (floor (/ (window-width) 2))))
+
 (evil-define-motion evil-ret (count)
   "Move the cursor COUNT lines down.
 If point is on a widget or a button, click on it.
